@@ -44,7 +44,7 @@ html{
 
 body{
     font-family: var(--font-principal);
-	background-color:var(--general_background-color);
+	background-image: linear-gradient(to right bottom, #c3e1e7, #b0e3ea, #9ce4ec, #84e6ed, #69e7ec);
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -52,6 +52,7 @@ body{
 ul{
     list-style-type: none;
 }
+
 
 .cabecera {
 	grid-area: cabecera;
@@ -69,12 +70,17 @@ ul{
 .cabecera__links li {
 	display: inline-block;
 	margin-left: 10px;
-	margin-bottom: 01px;
-	padding: 05px;
+	margin-bottom: 3px;
+	padding: 04px;
+	transition: all 0.2s;
+}
+
+.cabecera__links li:hover{
+	background-color:var(--general_background-color);
 }
 
 .cabecera__links a {
-    color: var(--primary);
+	    color: var(--primary);
 	text-decoration-style: none;
 	text-decoration-line: none;
 }
@@ -95,6 +101,11 @@ ul{
 }
 .cabecera img{
     width: 150px;
+	transition: all 0.3s;
+}
+
+.cabecera img:hover{
+    width: 165px;
 }
 
 .pieDePagina {
@@ -369,7 +380,31 @@ ul{
 	font-size: var(--text-large);
 	grid-area: titulo;
 	display: flex;
+	animation-name: efectoUno;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
 }
+  
+  @keyframes efectoUno {
+	0% {
+		color: blue;
+	}
+	17% {
+		color: lawngreen;
+	}
+	25% {
+		color: red;
+	}
+	50% {
+		color: green;
+	}
+	75% {
+		color: pink;
+	}
+	100% {
+		color: indianred;
+	}
+  }
 
 .contenedor{
 	grid-area: contenedor;
@@ -390,10 +425,15 @@ ul{
 	justify-content: right;
 }
 
-.job__1 img{
+.job__images{
 	margin: 0;
     width: 100%;
     height: auto;
+	transition: all 0.2s;
+}
+
+.job__images:hover{
+transform: translateX(5px);
 }
 
 .jtext {
@@ -408,22 +448,10 @@ ul{
 	justify-content: left;
 }
 
-.job__2 img{
-	margin: 0;
-    width: 100%;
-    height: auto;
-}
-
 .job__3{
 	display: flex;
 	grid-area: job_3;
 	justify-content: right;
-}
-
-.job__3 img{
-	margin: 0;
-    width: 100%;
-    height: auto;
 }
 
 .job__4{
@@ -432,34 +460,16 @@ ul{
 	justify-content: left;
 }
 
-.job__4 img{
-	margin: 0;
-    width: 100%;
-    height: auto;
-}
-
 .job__5{
 	display: flex;
 	grid-area: job_5;
 	justify-content: right;
 }
 
-.job__5 img{
-	margin: 0;
-    width: 100%;
-    height: auto;
-}
-
 .job__6{
 	display: flex;
 	grid-area: job_6;
 	justify-content: left;
-}
-
-.job__6 img{
-	margin: 0;
-    width: 100%;
-    height: auto;
 }
 
 /*Pagina contacto*/
