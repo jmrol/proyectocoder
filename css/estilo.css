@@ -42,6 +42,7 @@ html{
     font-size: 62.5%;
 }
 
+/*Gradiante*/
 body{
     font-family: var(--font-principal);
 	background-image: linear-gradient(to right bottom, #c3e1e7, #b0e3ea, #9ce4ec, #84e6ed, #69e7ec);
@@ -99,6 +100,8 @@ ul{
 .cabecera__links li:hover ul {
     display: block;
 }
+
+/*transformacion*/
 .cabecera img{
     width: 150px;
 	transition: all 0.3s;
@@ -376,6 +379,7 @@ ul{
 	column-gap: 10px;
 }
 
+/*Animacion*/
 .trabajo__titulo {
 	font-size: var(--text-large);
 	grid-area: titulo;
@@ -432,6 +436,7 @@ ul{
 	transition: all 0.2s;
 }
 
+/*translate*/
 .job__images:hover{
 transform: translateX(5px);
 }
