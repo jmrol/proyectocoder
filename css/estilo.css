@@ -133,7 +133,7 @@ ul{
 
 /*pagina home*/
 
-.grilla__home{
+/* .grilla__home{
 	display: grid;
 	grid-template-areas:
 	"cabecera cabecera"
@@ -145,14 +145,14 @@ ul{
 	height: 100vh;
 	row-gap: 10px;
 	column-gap: 10px;
-}
+} */
 
-.principal{
+/*#carousel{
 	grid-area: slideshow;
-	display: flex;
-}
+	 display: flex; 
+}*/
 
-.principal__contenedor{
+/* .principal__contenedor{
 	display: flex;
 }
 
@@ -168,7 +168,7 @@ ul{
 	font-weight: bold;
 	position: absolute;
 	left: 5%;
-}
+} */
 
 .idea{
 	grid-area: idea;
