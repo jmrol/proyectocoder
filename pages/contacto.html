@@ -11,32 +11,74 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body class="grilla__contacto">
-  <header class="cabecera">
-    <a href="../index.html"><img src="../assets/img/logo.png" alt="Enlace home" ></a>
-      <nav>
-          <ul class="cabecera__links">
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./servicios.html">Servicios +</a>
-              <ul>
-                <li><a href="./servicios.html#diseñoIndustrial">Diseño Industrial</a></li>
-                <li><a href="./servicios.html#prototipado">Prototipado</a></li>
-                <li><a href="./servicios.html#desarroloConstructivo">Desarrolo Constructivo</a></li>
+<body  class="container-fluid">
+  <header class="grid text-center cabecera">
+    <section class="row">
+      <!-- INICIO DE COLUMNA -->
+      <section class="col">
+        <!-- INICIO DE NAV -->
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../assets/img/logo.png" alt="Enlace home" width="30" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./servicios.html#diseñoIndustrial">Diseño Industrial</a></li>
+                    <li><a class="dropdown-item" href="./servicios.html#prototipado">Prototipado</a></li>
+                    <li><a class="dropdown-item" href="./servicios.html#desarroloConstructivo">Desarrolo Constructivo</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./trabajos.html">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
               </ul>
-            </li>
-            <li><a href="./trabajos.html">Trabajos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-      </nav>
+            </div>
+          </div>
+        </nav>
+              <!-- FIN DE NAV -->
+    </section>
+    <!-- FIN DE COLUMNA -->
+  </section>
+      
   </header>
-  <div class="mapa">
-    <img src="../assets/img/mapa.png" alt="mapa">
-  </div>
+
+  <section class="row">
+    <section class="col-sm-12 col-md-6 col-lg-7">
   <div class="direccion">
     <p>Dirección:</p>
     <p>San Bueno 746</p>
     <p>CABA</p>
   </div>
+</section>
+</section>
+
+  <section class="row">
+      <section class="col-sm-12 col-md-6 col-lg-6">
+  <div class="mapa">
+    <img src="../assets/img/mapa.png" alt="mapa">
+  </div>
+  </section>
+ 
+
+
+
+
+  <section class="col-sm-12 col-md-6 col-lg-5">
   <form>
     <fieldset>
       <legend>Datos personales</legend>
@@ -70,18 +112,25 @@
       <input type="reset" value="Borrar">
     </fieldset>
   </form>
-  <footer class="pieDePagina">
-    <ul class="pieDePagina__links">
-      <li>Telefono: 0249-46756767</li>
-      <li>Mail: diseñoydesarrollo@kmail.com</li>
-      <li><a href="https://www.instagram.com/" target="_blank">
-        <img src="../assets/img/instagram logo.png" alt="logo instagram" width="16px" height="16px"></a>
-      </li>
-      <li><a href="https://www.facebook.com/" target="_blank">
-        <img src="../assets/img/face logo.png" alt="logo facebook" width="16px" height="16px"></a>
-      </li>
-    </ul>
-  </footer>
+</section>
+</section>
+
+  <section class="row">
+    <section class="col">
+      <footer class="pieDePagina">
+        <ul class="pieDePagina__links">
+          <li>Telefono: 0249-46756767</li>
+          <li>Mail: diseñoydesarrollo@kmail.com</li>
+          <li><a href="https://www.instagram.com/" target="_blank">
+              <img src="../assets/img/instagram logo.png" alt="logo instagram" width="16px" height="16px"></a>
+          </li>
+          <li><a href="https://www.facebook.com/" target="_blank">
+              <img src="../assets/img/face logo.png" alt="logo facebook" width="16px" height="16px"></a>
+          </li>
+        </ul>
+     </footer> -->
+   </section>
+ </section>
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

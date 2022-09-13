@@ -366,7 +366,7 @@ body{
 
 /*Pagina trabajo*/
 
-.grilla__trabajos{
+/* .grilla__trabajos{
 	display: grid;
 	grid-template-areas:
 	"cabecera"
@@ -377,7 +377,7 @@ body{
 	grid-template-columns: 1fr;
 	row-gap: 10px;
 	column-gap: 10px;
-}
+} */
 
 /*Animacion*/
 .trabajo__titulo {
@@ -410,7 +410,7 @@ body{
 	}
   }
 
-.contenedor{
+/* .contenedor{
 	grid-area: contenedor;
 	display: grid;
 	grid-template-areas:
@@ -447,7 +447,7 @@ transform: translateX(5px);
     position: absolute;
 }
 
-.job__2{
+/* .job__2{
 	display: flex;
 	grid-area: job_2;
 	justify-content: left;
@@ -475,11 +475,11 @@ transform: translateX(5px);
 	display: flex;
 	grid-area: job_6;
 	justify-content: left;
-}
+}  */
 
 /*Pagina contacto*/
 
-.grilla__contacto{
+/* .grilla__contacto{
 	display: grid;
 	grid-template-areas:
 	"cabecera cabecera"
@@ -502,7 +502,7 @@ transform: translateX(5px);
 
 .mapa {
 	grid-area: mapa;
-}
+} */
 
 .mapa img{
 	margin: 0;
