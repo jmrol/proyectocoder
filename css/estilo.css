@@ -4,9 +4,10 @@
 
 :root {
 	/* Colors */
-	--primary: #120D31;
+	--primary: #0d1431;
 	--secondary: #e79925;
 	--atext-color: #302F4D;
+	--texto-opaco: gray;
 	--general_background-color: #f4fdfff8;
 	--alternative_background-color: #c3e1e7;
 
@@ -21,7 +22,7 @@
 	--font-title: 'Roboto Slab', serif;
 
 	/* Font-Sizes */
-	--text-xlarge: 4em;
+	--text-xlarge: 3.5em;
 	--text-large: 3em;
 	--text-medium: 2em;
 	--text-base: 1.6em;
@@ -39,7 +40,6 @@
 
 /*Gradiante*/
 body {
-	/* font-family: var(--font-principal); */
 	background-image: linear-gradient(to right bottom, #c3d9e7, #b0d8ea, #9ce0ec, #84d4ed, #5289bd);
 }
 
@@ -108,7 +108,6 @@ body {
 	}
 }
 
-
 .text-decoration-none {
 	color: #120D31;
 }
@@ -142,9 +141,14 @@ body {
 	}
 }
 
+
+
 .main__servicios__titulo {
 	font-size: var(--text-large);
 	display: flex;
+	animation-name: efectoUno;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
 }
 
 @media screen and (max-width:600px) {
@@ -169,6 +173,7 @@ body {
 }
 
 .texto__interior {
+	-webkit-text-stroke: 2px gray;
 	font-size: var(--text-xlarge);
 	font-weight: bold;
 	left: 10%;
@@ -183,7 +188,6 @@ body {
 		font-size: var(--text-medium);
 	}
 }
-
 
 .img-uno {
 	background-image: url("../assets/img/diseño\ industrial.jpg")
@@ -200,6 +204,7 @@ body {
 .texto {
 	margin-bottom: 60px;
 	text-align: center;
+	font-size: var(--text-base);
 	padding: 1%;
 	width: 100%
 }
@@ -222,27 +227,15 @@ body {
 
 @keyframes efectoUno {
 	0% {
-		color: blue;
-	}
-
-	17% {
-		color: lawngreen;
-	}
-
-	25% {
-		color: red;
+		color: black;
 	}
 
 	50% {
-		color: green;
-	}
-
-	75% {
-		color: pink;
+		color: darkblue;
 	}
 
 	100% {
-		color: indianred;
+		color: black;
 	}
 }
 
@@ -251,10 +244,14 @@ body {
 	transform: translateX(5px);
 }
 
-.jtext {
-	color: var(--atext-color);
-	font-size: var(--text-large);
-	position: absolute;
+.cambio__color{
+	color: var(--texto-opaco);
+	transition: all 0.5s;
+}
+
+.cambio__color:hover {
+	color: var(--primary);
+	font-size: var(--text-base);
 }
 
 .mapa img {
