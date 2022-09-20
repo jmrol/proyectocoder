@@ -1,0 +1,23 @@
+.cabecera {
+	background-color: transparent;
+	margin-bottom: 35px;
+    img {
+        width: 100px;
+        transition: all 0.3s;
+        &:hover {
+            width: 115px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+	.cabecera {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.cabecera img {
+		width: 70px;
+	}
+}

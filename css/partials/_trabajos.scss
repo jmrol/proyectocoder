@@ -1,0 +1,44 @@
+/*Animacion*/
+.trabajo__titulo {
+	font-size: var(--text-large);
+	grid-area: titulo;
+	display: flex;
+	animation-name: efectoUno;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+
+@media screen and (max-width:600px) {
+	.trabajo__titulo {
+		font-size: var(--text-medium);
+	}
+}
+
+@keyframes efectoUno {
+	0% {
+		color: black;
+	}
+
+	50% {
+		color: darkblue;
+	}
+
+	100% {
+		color: black;
+	}
+}
+
+/*translate*/
+.job__images:hover {
+	transform: translateX(5px);
+}
+
+.cambio__color{
+	color: var(--texto-opaco);
+	transition: all 0.5s;
+}
+
+.cambio__color:hover {
+	color: var(--primary);
+	font-size: var(--text-base);
+}

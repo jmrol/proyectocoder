@@ -1,0 +1,11 @@
+.pieDePagina {
+	margin-top: 70px;
+	padding-top: 20px;
+	background-color: transparent;
+}
+
+@media screen and (max-width:900px) {
+	.pieDePagina {
+		margin-top: 30px;
+	}
+}

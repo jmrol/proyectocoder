@@ -1,0 +1,65 @@
+.main__servicios__titulo {
+	font-size: var(--text-large);
+	display: flex;
+	animation-name: efectoUno;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+
+@media screen and (max-width:600px) {
+	.main__servicios__titulo {
+		font-size: var(--text-medium);
+	}
+}
+
+.parallax,
+.main__parallax {
+	margin: 0 auto
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45rem;
+	max-width: 100%;
+	position: relative
+}
+
+.texto__interior {
+	-webkit-text-stroke: 2px gray;
+	font-size: var(--text-xlarge);
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top: 20%;
+	width: 80%
+}
+
+@media screen and (max-width:500px) {
+	.texto__interior {
+		font-size: var(--text-medium);
+	}
+}
+
+.img-uno {
+	background-image: url("../assets/img/diseño\ industrial.jpg")
+}
+
+.img-dos {
+	background-image: url("../assets/img/prototipado.jpeg")
+}
+
+.img-tres {
+	background-image: url("../assets/img/desarrollo\ productivo.gif")
+}
+
+.texto {
+	margin-bottom: 60px;
+	text-align: center;
+	font-size: var(--text-base);
+	padding: 1%;
+	width: 100%
+}
