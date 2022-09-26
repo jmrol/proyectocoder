@@ -20,7 +20,7 @@
   /* Font-Sizes */
   --text-xlarge: 3.5em;
   --text-large: 3em;
-  --text-medium: 2em;
+  --text-medium: 2.2em;
   --text-base: 1.6em;
   --text-small: 1.3em;
 }
@@ -50,10 +50,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-image: linear-gradient(to right bottom, rgba(184, 29, 94, 0.733), #b0d8ea, #9ce0ec, #84d4ed, #5289bd);
 }
 
 .cabecera {
