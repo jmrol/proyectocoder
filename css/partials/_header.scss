@@ -1,5 +1,5 @@
 .cabecera {
-	background-color: transparent;
+	background-color: map-get($Colors, --alternative_background-color );
 	margin-bottom: 35px;
     img {
         width: 100px;

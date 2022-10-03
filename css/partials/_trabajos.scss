@@ -34,11 +34,11 @@
 }
 
 .cambio__color{
-	color: var(--texto-opaco);
+	color: map-get($Colors,--texto-opaco);
 	transition: all 0.5s;
 }
 
 .cambio__color:hover {
-	color: var(--primary);
+	color: map-get($Colors,--primary);
 	font-size: var(--text-base);
 }

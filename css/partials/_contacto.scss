@@ -2,4 +2,9 @@
 	margin: 0;
 	width: 100%;
 	height: auto;
+	@extend %marcoResaltado;
+}
+
+.mapa{
+	@include ejemplo_mixin($margin:500px);
 }

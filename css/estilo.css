@@ -1,14 +1,21 @@
 @charset "UTF-8";
-/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap");
+.mapa img {
+  border-color: #404040;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+/* Fonts */
 :root {
   /* Colors */
-  --primary: #0d1431;
-  --secondary: #e79925;
+  --primary: black;
+  --secondary: #404040;
+  --tertiary:#3486D9;
   --atext-color: #302F4D;
   --texto-opaco: gray;
-  --general_background-color: #f4fdfff8;
-  --alternative_background-color: #c3e1e7;
+  --general_background-color: white;
+  --alternative_background-color: #E6E6E6;
   /* Spacings */
   --spacing-large: 6rem;
   --spacing-medium: 3rem;
@@ -53,11 +60,11 @@
 }
 
 body {
-  background-image: linear-gradient(to right bottom, rgba(184, 29, 94, 0.733), #b0d8ea, #9ce0ec, #84d4ed, #5289bd);
+  background-color: white;
 }
 
 .cabecera {
-  background-color: transparent;
+  background-color: #E6E6E6;
   margin-bottom: 35px;
 }
 .cabecera img {
@@ -81,7 +88,7 @@ body {
 .pieDePagina {
   margin-top: 70px;
   padding-top: 20px;
-  background-color: transparent;
+  background-color: #E6E6E6;
 }
 
 @media screen and (max-width: 900px) {
@@ -113,7 +120,7 @@ body {
   margin-bottom: 30px;
 }
 .main__nosotros__titulo p {
-  color: var(--primary);
+  color: black;
   font-size: var(--text-large);
   font-weight: bold;
   position: absolute;
@@ -248,12 +255,12 @@ body {
 }
 
 .cambio__color {
-  color: var(--texto-opaco);
+  color: gray;
   transition: all 0.5s;
 }
 
 .cambio__color:hover {
-  color: var(--primary);
+  color: black;
   font-size: var(--text-base);
 }
 

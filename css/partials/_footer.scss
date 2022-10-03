@@ -1,7 +1,7 @@
 .pieDePagina {
 	margin-top: 70px;
 	padding-top: 20px;
-	background-color: transparent;
+	background-color: map-get($Colors, --alternative_background-color );
 }
 
 @media screen and (max-width:900px) {
