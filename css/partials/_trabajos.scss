@@ -16,15 +16,15 @@
 
 @keyframes efectoUno {
 	0% {
-		color: black;
+		color: map-get($Colors,--primary);
 	}
 
 	50% {
-		color: darkblue;
+		color: map-get($Colors,--tertiary);
 	}
 
 	100% {
-		color: black;
+		color: map-get($Colors,--primary);
 	}
 }
 
@@ -34,7 +34,7 @@
 }
 
 .cambio__color{
-	color: map-get($Colors,--texto-opaco);
+	color: transparent;
 	transition: all 0.5s;
 }
 

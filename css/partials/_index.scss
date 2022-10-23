@@ -15,6 +15,6 @@
 }
 
 .text-decoration-none {
-	color: #120D31;
+	color: map-get($Colors,--primary);
 }
 

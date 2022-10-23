@@ -8,14 +8,6 @@
 
 /* Fonts */
 :root {
-  /* Colors */
-  --primary: black;
-  --secondary: #404040;
-  --tertiary:#3486D9;
-  --atext-color: #302F4D;
-  --texto-opaco: gray;
-  --general_background-color: white;
-  --alternative_background-color: #E6E6E6;
   /* Spacings */
   --spacing-large: 6rem;
   --spacing-medium: 3rem;
@@ -113,7 +105,7 @@ body {
 }
 
 .text-decoration-none {
-  color: #120D31;
+  color: black;
 }
 
 .main__nosotros__titulo {
@@ -174,7 +166,7 @@ body {
 }
 
 .texto__interior {
-  -webkit-text-stroke: 2px gray;
+  -webkit-text-stroke: 2px #404040;
   font-size: var(--text-xlarge);
   font-weight: bold;
   left: 10%;
@@ -190,7 +182,7 @@ body {
   }
 }
 .img-uno {
-  background-image: url("../assets/img/diseño industrial.jpg");
+  background-image: url("../assets/img/diseñoindustrial.jpeg");
 }
 
 .img-dos {
@@ -198,7 +190,7 @@ body {
 }
 
 .img-tres {
-  background-image: url("../assets/img/desarrollo productivo.gif");
+  background-image: url("../assets/img/desarrolloproductivo2.jpeg");
 }
 
 .texto {
@@ -232,7 +224,7 @@ body {
     color: black;
   }
   50% {
-    color: darkblue;
+    color: #3486D9;
   }
   100% {
     color: black;
@@ -243,7 +235,7 @@ body {
     color: black;
   }
   50% {
-    color: darkblue;
+    color: #3486D9;
   }
   100% {
     color: black;
@@ -255,7 +247,7 @@ body {
 }
 
 .cambio__color {
-  color: gray;
+  color: transparent;
   transition: all 0.5s;
 }
 
@@ -268,4 +260,13 @@ body {
   margin: 0;
   width: 100%;
   height: auto;
+}
+
+.form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-select {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=estilo.css.map */

@@ -5,6 +5,13 @@
 	@extend %marcoResaltado;
 }
 
-.mapa{
-	@include ejemplo_mixin($margin:500px);
+
+.form-control{
+margin-top: 10px;
+margin-bottom: 10px;
 }
+
+.form-select{
+
+	margin-bottom: 10px;
+	}
